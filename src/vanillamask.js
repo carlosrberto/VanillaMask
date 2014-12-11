@@ -1,13 +1,13 @@
 /*!
  * Vanillay Mask
- * http://carlosrberto.github.com/VanillaMask/
+ * https://github.com/carlosrberto/VanillaMask
  *
  * Copyright (c) 2014 Carlos Roberto Gomes Junior
  *
  * Licensed under a Creative Commons Attribution 3.0 License
  * http://creativecommons.org/licenses/by-sa/3.0/
  *
- * Version: 1.0
+ * Version: 0.1
  */
 
 (function(global){
