@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VanillaMask Demo</title>
+</head>
+<body>
+    <h3>VanillaMask Demo</h3>
+    <hr>
+    <p>
+        <label>Phone</label>
+        <input type="text" id="phone">
+    </p>
+    <p>
+        <label>Date</label>
+        <input type="text" id="date">
+        <span id="date-complete"></span>
+    </p>
+    <p>
+        <label>Time</label>
+        <input type="text" id="time">
+    </p>
+    <script src="../src/vanillamask.js"></script>
+    <script>
+        new VanillaMask(document.getElementById('phone'), {
+            masks: ["(99) 9999-9999", "(99) 99999-9999"]
+        });
+
+        new VanillaMask(document.getElementById('date'), {
+            masks: ["99/99/9999"],
+            onComplete: function() {
+                document.getElementById('date-complete').innerHTML = 'date mask completed';
+            }
+        });
+
+        new VanillaMask(document.getElementById('time'), {
+            masks: ["hh:mm:ss"]
+        });
+    </script>
+</body>
+</html>
