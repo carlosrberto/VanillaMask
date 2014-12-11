@@ -18,10 +18,10 @@ new VanillaMask(document.querySelector("#cellphone"), {
 With jQuery
 
 ```javascript
-	$("#cellphone").VanillaMask({
-		masks: ['(99) 9999-9999', '(99) 99999-9999']
-	})
-	.on('complete.VanillaMask', function(){
-		console.log('mask complete');
-    });
+$("#cellphone").VanillaMask({
+	masks: ['(99) 9999-9999', '(99) 99999-9999']
+})
+.on('complete.VanillaMask', function(){
+	console.log('mask complete');
+});
 ```
