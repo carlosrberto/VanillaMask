@@ -4,8 +4,7 @@
  *
  * Copyright (c) 2014 Carlos Roberto Gomes Junior
  *
- * Licensed under a Creative Commons Attribution 3.0 License
- * http://creativecommons.org/licenses/by-sa/3.0/
+ * Licensed under MIT License
  *
  * Version: 0.1
  */
@@ -26,6 +25,11 @@
 
     var VanillaMask = function(input, options) {
         var that = this;
+
+        if (!input || !options) {
+            return;
+        }
+
         if ($ && input instanceof $) {
             this.jquery = true;
             this.$input = input;
